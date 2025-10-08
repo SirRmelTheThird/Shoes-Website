@@ -1,0 +1,93 @@
+#body{
+    display: flex;
+    position: static;
+    
+}
+
+#content{
+    
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px 30px;
+    justify-content: center;
+
+}
+
+.box{
+    display: grid;
+    border: 5px solid rgb(	186, 186, 186);
+    background-color: 	rgb(186, 186, 186);
+    height: 500px;
+    width: 500px;
+    place-content: center; 
+    position: static;
+} 
+
+.box:hover{  
+    background-color:rgb(150, 150, 150);
+    border: 5px solid rgb(150, 150, 150);
+    text-decoration: none;
+}
+.image:hover{transform: scale(1.15)
+}
+
+.image{
+    display: flex;
+    grid-row-end: 1;
+    grid-row-start: 1;
+    
+}
+
+.Trend{
+    margin-top: 60px;
+}
+
+.id{
+    grid-row-end: 2;
+    grid-row-start: 2;
+    float: left;
+}
+.model{
+    grid-row-end: 3;
+    grid-row-start: 3;
+}
+
+.price {
+    grid-row-end: 4;
+    grid-row-start: 4;
+    place-items: left;
+}
+
+/* SEARCH BAR */
+.search{ 
+    border-radius: 10px;
+    padding: 1px; 
+    width: auto;
+    height: auto; 
+    display: flex;
+    position: relative;
+    top :15%;
+    left: 35%;
+}
+.searchTerm {
+    border-radius: 25px;
+    background-color: lightgray;
+    border-color: black;
+    text-align-last: center;
+    position: relative;
+}
+.searchButton {
+    width: auto;
+    height: auto;
+    border-radius: 90%;
+    border-color: black;
+    position: relative;
+    background-color: lightgray;
+    right: 2.5%;
+    cursor: pointer;
+}
+
+.searchButton:hover{
+    transform: scale(1.02)
+
+}
